@@ -85,7 +85,8 @@ print(employee_dict(employees["rows"][1]))
 #Task 9
 def all_employees_dict():
     result = {}
-
+    employee_id_column = 0
+    
     for row in employees["rows"]:
         id = row[employee_id_column]
         result[id] = employee_dict(row)
