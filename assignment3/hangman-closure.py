@@ -16,7 +16,7 @@ def make_hangman(secret_word):
         print(result)
 
         for ch in secret_word:
-            if ch not in guesses:
+            if ch.lower() not in guesses:
                 return False
 
         return True
