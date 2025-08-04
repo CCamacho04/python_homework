@@ -9,9 +9,9 @@ def logger_decorator(func):
     def wrapper(*args, **kwargs):
         result = func(*args, **kwargs)
 
-        msg = (f"function: {func.__name__}"
-               f"positional parameters: {args if args else 'none'}"
-               f"keyword parameters: {kwargs if kwargs else 'none'}"
+        msg = (f"function: {func.__name__} "
+               f"positional parameters: {args if args else 'none'} "
+               f"keyword parameters: {kwargs if kwargs else 'none'} "
                f"return: {result}")
         
         logger.log(logging.INFO, msg)
