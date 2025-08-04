@@ -86,6 +86,8 @@ print(employee_dict(employees["rows"][1]))
 def all_employees_dict():
     result = {}
 
+    employee_id_column = 0
+    
     for row in employees["rows"]:
         id = row[employee_id_column]
         result[id] = employee_dict(row)
@@ -164,4 +166,4 @@ def write_sorted_list():
 
     return converted_list
 
-print(write_sorted_list)
+print(write_sorted_list())

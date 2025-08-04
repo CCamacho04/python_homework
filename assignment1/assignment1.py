@@ -30,7 +30,7 @@ def calc(val1, val2, op = "multiply"):
             case "power":
                 return val1 ** val2
             case _:
-                return val1 * val2
+                return f'Invalid operation {op}"
     except ZeroDivisionError:
         return "You can't divide by 0!"
     except Exception:
@@ -89,6 +89,8 @@ def student_scores(op, **kwargs):
         return sum(kwargs.values()) / len(kwargs)
     elif op == "best":
         return max(kwargs, key = kwargs.get)
+    else:
+        return "Invalid operation"
     
 print(student_scores("mean", Bill = 70, Jerry = 95, Teresa = 82))
 print(student_scores("best", Bill = 70, Jerry = 95, Teresa = 82))
