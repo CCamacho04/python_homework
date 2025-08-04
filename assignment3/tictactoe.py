@@ -1,7 +1,7 @@
 #Task 6
 class TictactoeException:
     def __init__(self, message):
-        self.msg = msg
+        self.message = message
         super().__init__(message)
 
 class Board:
