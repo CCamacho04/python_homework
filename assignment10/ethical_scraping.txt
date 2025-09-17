@@ -1,0 +1,10 @@
+Which sections of the website are restricted for crawling?
+/w/, /api/, /trap/, /wiki/Special:, /wiki/Spezial:, /wiki/Spesial:, /wiki/Special%3A, /wiki/Spezial%3A, /wiki/Spesial%3A
+
+Are there specific rules for certain user agents?
+Certain user-agents like Zealbot, MSIECrawler, and SiteSnagger are designed to copy entire sites.
+Another like WebReaper, downloads gazillions of pages with no public benefit.
+
+Reflect on why websites use robots.txt and write 2-3 sentences explaining its purpose and how it promotes ethical scraping. 
+Robots.txt helps protect sensitive content and manage what parts of the website web crawlers can interact with.
+This can help avoid performance issues and web crawlers having access to sensitive information.

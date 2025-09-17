@@ -1,0 +1,4 @@
+One of the challenges I faced during task 6 was correctly identifying and extracting all ten security vulnerabilities.
+Initially, I used an XPath expression that selected all <a> elements where the href contained 'A0'.
+However, this only extracted the first nine, instead of all ten.
+To fix this, I updated it to include both 'A0' and 'A1', which extracted all ten vulnerabilities.
